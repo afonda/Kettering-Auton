@@ -18,8 +18,8 @@ public:
 
 	Auton(Drivetrain* drivetrain);
 	void Turn(double angle, bool rev);
-	void Fwd(double Time, bool rev);
-	void Strafe(double time, bool rev);
+	void Fwd(double Time, bool rev, double speed);
+	void Strafe(double time, bool rev, double speed);
 	void Stop();
 
 private:

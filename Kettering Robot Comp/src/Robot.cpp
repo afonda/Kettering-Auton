@@ -35,9 +35,20 @@ public:
 	void Autonomous() {
 
 		//53 deg to gear
+/* Left Gear Auton
+		auton.Fwd(1.5, true, 0.5);
+		auton.Turn(47, false);
+		auton.Fwd(1.9, true, 0.5);
+*/
+/* Right Gear Auton
+		auton.Fwd(1.2, true, 0.5);
+		auton.Turn(48.5, true);
+		auton.Fwd(2, true, 0.5);
+*/
 
-
-
+/* Center Gear
+		auton.Fwd(2, true, 0.5);
+*/
 	}
 
 	//Expands Deadzone On Joysticks

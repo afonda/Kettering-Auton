@@ -97,5 +97,4 @@ void Drivetrain::Stop(){
 	list->motor3->Set(0);
 	list->motor4->Set(0);
 
-
 }

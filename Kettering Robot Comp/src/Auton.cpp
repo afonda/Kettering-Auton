@@ -31,34 +31,30 @@ void Auton::Turn(double angle, bool rev){
 	list->time.Stop();
 }
 
-void Auton::Fwd(double time, bool rev){
+void Auton::Fwd(double time, bool rev, double speed){
 
 	list->time.Start();
 	list->time.Reset();
 
-
-		int speed = 1;
-
 		if(rev)
-			speed = -1;
+			speed = speed*-1;
 
 	while(list->time.Get() < time){
 	list->drivetrain->Drive(speed, 0, 0);
 	}
 
+	list->drivetrain->Stop();
+
 	list->time.Stop();
 }
 
-void Auton::Strafe(double time, bool rev){
+void Auton::Strafe(double time, bool rev, double speed){
 
 	list->time.Start();
 		list->time.Reset();
 
-
-			int speed = 1;
-
 			if(rev)
-				speed = -1;
+				speed = speed*-1;
 
 		while(list->time.Get() < time){
 		list->drivetrain->Drive(0, 0, speed);
