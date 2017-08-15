@@ -34,6 +34,8 @@ public:
 	}
 	void Autonomous() {
 
+		drivetrain.list->gyroZero = drivetrain.list->Gyro->GetAngle();
+
 		//53 deg to gear
 /* Left Gear Auton
 		auton.Fwd(1.5, true, 0.5);
@@ -45,10 +47,79 @@ public:
 		auton.Turn(48.5, true);
 		auton.Fwd(2, true, 0.5);
 */
-
 /* Center Gear
 		auton.Fwd(2, true, 0.5);
 */
+		/* 1/2 way around airship
+
+		auton.Fwd(2.2, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(75, true);
+		frc::Wait(0.5);
+		auton.Fwd(1.2, true, 1);
+
+*/
+/* one time around airship
+		auton.Fwd(2.2, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(75, true);
+		frc::Wait(0.5);
+		auton.Fwd(2.2, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(80, true);
+		frc::Wait(0.5);
+		auton.Fwd(2.2, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(75, true);
+		frc::Wait(0.5);
+		auton.Fwd(1.9, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(75, true);
+*/
+		/* 2 times around airship
+
+
+auton.Fwd(2.2, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(75, true);
+		frc::Wait(0.5);
+		auton.Fwd(2.2, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(80, true);
+		frc::Wait(0.5);
+		auton.Fwd(2.2, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(75, true);
+		frc::Wait(0.5);
+		auton.Fwd(1.9, true, 1);
+		frc::Wait(0.5);
+		auton.Turn(75, true);
+
+
+		auton.Fwd(2.2, true, 1);
+				frc::Wait(0.5);
+				auton.Turn(75, true);
+				frc::Wait(0.5);
+				auton.Fwd(2.2, true, 1);
+				frc::Wait(0.5);
+				auton.Turn(80, true);
+				frc::Wait(0.5);
+				auton.Fwd(2.2, true, 1);
+				frc::Wait(0.5);
+				auton.Turn(75, true);
+				frc::Wait(0.5);
+				auton.Fwd(1.9, true, 1);
+				frc::Wait(0.5);
+				auton.Turn(75, true);
+
+
+*/
+
+
+
+
+
+
 	}
 
 	//Expands Deadzone On Joysticks
