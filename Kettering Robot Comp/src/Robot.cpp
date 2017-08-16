@@ -59,7 +59,7 @@ public:
 		auton.Fwd(1.2, true, 1);
 
 */
-/* one time around airship
+		/* one time around airship
 		auton.Fwd(2.2, true, 1);
 		frc::Wait(0.5);
 		auton.Turn(75, true);
@@ -115,10 +115,34 @@ auton.Fwd(2.2, true, 1);
 
 */
 
+//Figure 8 WIP
+		/*
+		auton.Fwd(3.5, true, .8);
+		frc::Wait(0.5);
+		auton.Turn(45, true);
+		auton.Fwd(3.25, true, .8);
+		frc::Wait(.5);
+		auton.Turn(45, false);
+		auton.Fwd(2, true, .8);
+		frc::Wait(.5);
+		auton.Turn(75, false);
+		auton.Fwd(2, true, .8);
+		frc::Wait(.5);
+		auton.Turn(70, false);
+		auton.Fwd(3.45, true, .8);
+		frc::Wait(.5);
+		auton.Turn(40, false);
+		auton.Fwd(3.15, true, .8);
+		frc::Wait(.5);
+		auton.Turn(45, true);
+		auton.Fwd(2.5, true, .8);
+		frc::Wait(.5);
+		auton.Turn(70, true);
+		auton.Fwd(2.15, true, .8);
+		frc::Wait(.5);
+		auton.Turn(75, true);
 
-
-
-
+*/
 
 	}
 

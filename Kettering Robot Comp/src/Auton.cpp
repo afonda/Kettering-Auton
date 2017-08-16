@@ -24,7 +24,7 @@ void Auton::Turn(double angle, bool rev){
 	list->time.Start();
 	list->time.Reset();
 
-	while(list->time.Get() < 0.5){
+	while(list->time.Get() < 1){
 		list->drivetrain->Update();
 	}
 
@@ -59,6 +59,8 @@ void Auton::Strafe(double time, bool rev, double speed){
 		while(list->time.Get() < time){
 		list->drivetrain->Drive(0, 0, speed);
 		}
+
+		list->drivetrain->Stop();
 
 		list->time.Stop();
 }
